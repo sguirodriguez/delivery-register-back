@@ -1,6 +1,10 @@
 const Sequelize = require("sequelize");
 const dbConfig = require("../config/database");
 
-const sequelize = new Sequelize(dbConfig);
+const DeliveriesModel = require("../models/DeliveriesModel");
 
-module.exports = sequelize;
+const connection = new Sequelize(dbConfig);
+
+DeliveriesModel.init(connection);
+
+module.exports = connection;
