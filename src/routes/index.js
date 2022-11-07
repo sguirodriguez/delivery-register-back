@@ -3,8 +3,8 @@ const DeliveryController = require("../controller/DeliveryController");
 
 const routes = express.Router();
 
-routes.post("/", DeliveryController.CreateDelivery);
+routes.post("/delivery", DeliveryController.CreateDelivery);
 
-routes.get("/", DeliveryController.GetAllDeliveries);
+routes.get("/delivery", DeliveryController.GetAllDeliveries);
 
 module.exports = routes;
