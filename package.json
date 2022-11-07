@@ -5,7 +5,8 @@
   "repository": "https://github.com/sguirodriguez/delivery-register-back.git",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
