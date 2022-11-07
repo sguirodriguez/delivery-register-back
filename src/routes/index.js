@@ -3,11 +3,11 @@ const DeliveryController = require("../controller/DeliveryController");
 
 const routes = express.Router();
 
-routes.get("/", async (_request, response) => {
+routes.get("/", async (req, res) => {
   try {
-    return response.status(200).json("Online server!");
+    return res.status(200).json("Online server!");
   } catch (error) {
-    return response.status(500).json({ data: null, error });
+    return res.status(500).json({ data: null, error });
   }
 });
 
