@@ -29,3 +29,26 @@ back-end server for Web application to register deliveries and have a delivery e
  - [MVC](https://pt.wikipedia.org/wiki/MVC)
  - [Moment](https://momentjs.com/)
 
+## Api documentation
+
+#### Returns registered deliveries
+
+```http
+  GET /delivery
+```
+
+#### Register a delivery
+
+```http
+  POST /delivery
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `name`      | `string` | **Obrigatório**. client name |
+| `product`      | `string` | **Obrigatório**. product |
+| `origin`      | `string` | **Obrigatório**. starting point |
+| `destiny`      | `string` | **Obrigatório**. destination point |
+| `date`      | `date` | **Obrigatório**. delivery date |
+
+
